@@ -124,3 +124,30 @@ h3 {
 .value {
   color: green;
 }
+.photo-container {
+  float: right;
+  position: relative;
+  width: 120px;
+  height: 150px;
+}
+
+.photo-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.hover-photo {
+  opacity: 0;
+}
+
+.photo-container:hover .initial-photo {
+  opacity: 0;
+}
+
+.photo-container:hover .hover-photo {
+  opacity: 1;
+}
